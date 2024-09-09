@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
@@ -23,6 +35,25 @@ body{
     overflow-x: hidden;
     background-color: #0b1215;
     color: white;
+    animation: fadeInBody 1s ease-in;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
 }
 
 header{
@@ -47,10 +78,12 @@ header{
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .logo:hover{
-    transform: scale(1.1);
+    
+    transform: scale(1.2);
 }
 header{
     background-color: #0b1215;
@@ -63,6 +96,13 @@ nav a{
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    opacity: 0;
+    animation: fadeInNav 1.5s ease forwards;
+}
+@keyframes fadeInNav {
+    to {
+        opacity: 1;
+    }
 }
 
 nav a:hover,
@@ -115,8 +155,18 @@ section{
     align-items: center;
     gap: 8rem;
     background-color: #0b1215;
+    animation: fadeIn 2s ease-in-out;
 }
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
@@ -139,6 +189,7 @@ span{
 
 .home-img{
     border-radius: 50%;
+    
 }
 
 .home-img img{
@@ -148,6 +199,19 @@ span{
     box-shadow: 0 0 25px solid #ff7900;
     cursor: pointer;
     transition: 0.2s linear;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .home-img img:hover{
@@ -168,13 +232,14 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
     color: #ff7900;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .social-icons a:hover{
     color: black;
-    transform: scale(1.3) translateY(-5px);
+    transform: translateY(-5px) scale(1.3);
+    box-shadow: 0 0 15px #ff7900;
     background-color: #ff7900;
-    box-shadow: 0  0 25px #ff7900;
 }
 
 .btn{
@@ -272,4 +337,4 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
-}
+} 
