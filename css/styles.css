@@ -138,13 +138,13 @@ span{
 }
 
 .home-img{
-    border-radius: 25px 25px;
+    border-radius: 50%;
 }
 
 .home-img img{
     position: relative;
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 25% 50%;
     box-shadow: 0 0 25px solid #ff7900;
     cursor: pointer;
     transition: 0.2s linear;
