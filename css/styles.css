@@ -600,3 +600,13 @@ SKILLS
 .skills-card:active {
     transform: translateY(5px);
 }
+
+
+
+/* Footer Section */
+
+.footerid{
+    color: #eb822d;
+    background-color: #292b2c;
+    padding: 10rem;
+}
