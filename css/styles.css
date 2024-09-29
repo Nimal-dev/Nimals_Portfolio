@@ -138,7 +138,7 @@ nav a.active{
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 5rem 9%;
 }
 
 .home{
@@ -566,14 +566,14 @@ SKILLS
 
 .skills-card {
     margin-top: 3rem;
-    background: rgba(255, 255, 255, 0.3); /* Transparent background */
-    color: #333;
+    background: rgba(63, 56, 56, 0.185); /* Transparent background */
+    color: #0b1215;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
     padding: 20px;
     text-align: center;
     transition: 250ms transform ease-in-out;
-    width: 19rem;
+    width: 19.5rem;
     height: 20rem;
     cursor: pointer;
     backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
@@ -581,7 +581,10 @@ SKILLS
     border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
 }
 
+.skills-logo{
+    width: 9rem;
 
+}
 .skills-card h4 {
     padding-bottom: 1rem;
     font-weight: 200;
