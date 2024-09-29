@@ -610,3 +610,7 @@ SKILLS
     background-color: #292b2c;
     padding: 10rem;
 }
+
+.footer-contact, h2{
+    color: white;
+}
